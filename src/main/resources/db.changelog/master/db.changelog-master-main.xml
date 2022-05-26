@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd
+        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <include file="db.changelog/main/2022-11-05-0001-user.xml"/>
+    <include file="db.changelog/main/2022-11-05-0004-category.xml"/>
+    <include file="db.changelog/main/2022-11-05-0002-theme.xml"/>
+    <include file="db.changelog/main/2022-11-05-0003-card.xml"/>
+    <include file="db.changelog/main/2022-14-05-0005-user_favourite_categories.xml"/>
+
+    <include file="db.changelog/data/main/2022-11-05-0001-users-data.xml"/>
+    <include file="db.changelog/data/main/2022-11-05-0004-category-data.xml"/>
+    <include file="db.changelog/data/main/2022-11-05-0002-themes-data.xml"/>
+    <include file="db.changelog/data/main/2022-11-05-0003-cards-data.xml"/>
+    <include file="db.changelog/data/main/2022-14-05-0005-user_favourite_categories-data.xml"/>
+</databaseChangeLog>

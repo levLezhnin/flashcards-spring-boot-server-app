@@ -1,0 +1,23 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+#   url: jdbc:h2:file:./testspringdb;DB_CLOSE_ON_EXIT=FALSE;AUTO_RECONNECT=TRUE
+      url: jdbc:h2:mem:testspringdb
+
+  h2:
+    console:
+      enabled: true
+
+  liquibase:
+    enabled: true
+    change-log: classpath:db.changelog/master/db.changelog-master-main.xml
+
+  jpa:
+    generate-ddl: false
+
+    hibernate:
+      ddl-auto: none
+
+    show-sql: true
